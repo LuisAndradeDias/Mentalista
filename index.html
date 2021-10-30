@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mentalista</title>
+</head>
+
+<body class="teste">
+    <!-- RECORDS/MOEDAS -->
+    <div class="div-pontos">
+        <p class="p1">
+            <ion-icon class="icon-record" name="trophy"></ion-icon> <span class="span-pontos">0</span>
+        </p>
+        <p class="p2">Max: <span class="span-max-pontos">0</span></p>
+    </div>
+    <div class="div-moedas">
+        <p>
+            <ion-icon class="icon-cash" name="logo-bitcoin"></ion-icon> <span class="span-moedas">0</span>
+        </p>
+    </div>
+
+    <!-- LOJA -->
+
+    <input type="checkbox" name="input-loja" id="input-loja">
+    <div class="div-label-hambuguer">
+        <label for="input-loja" class="label-hamburguer">
+            <div class="div-content-hamburguer-loja">
+                <p class="loja-text">
+                    <ion-icon class="icon-button-cash" name="logo-bitcoin"></ion-icon>
+                </p>
+            </div>
+        </label>
+    </div>
+    <div class="div-loja">
+        <h1>Loja</h1>
+        <h4>Produtos</h4>
+        <div class="produto1" onclick="document.querySelector('#input-loja').checked = false, comprarProduto1()"><span
+                class="produto1-valor">10<ion-icon class="icon-loja-cash-produto1" name="logo-bitcoin"></ion-icon>
+            </span> DICA
+        </div>
+        <div class="em-breve">Em breve...</div>
+        <footer class="moedas-loja">Você tem <span class="span-moedas-loja">0</span>
+            <ion-icon class="icon-loja-cash" name="logo-bitcoin"></ion-icon>
+        </footer>
+    </div>
+
+    <!-- PRINCIPAL -->
+
+    <section class="container">
+        <input type="number" class="return-numero"></p>
+        <div class="container-align">
+            <h1 class="">Mentalista</h1>
+            <h5 class="">Chute um número de 0 á 15</h5>
+            <div class="div-tentativas">
+                <p>Você tem <span class="span-tentativas"></span> tentativas</p>
+            </div>
+            <p class="frase-p ">Insira o valor aqui!</p>
+            <input type="number" name="chute" class="input-chute">
+            <div class="div-botão"><input type="button" value="Chutar" class="botão-chutar"></div>
+            <p class="resultado"></p>
+            <div>
+                <h3 class="dica"></h3>
+            </div>
+        </div>
+    </section>
+    <footer class="copy">&copy;Luis Phelipe_</footer>
+    <script src="/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

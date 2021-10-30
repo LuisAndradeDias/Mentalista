@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap%27');
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    overflow: hidden;
+    background-color: dodgerblue;
+}
+
+/* PRINCIPAIS MENTALISTA*/
+
+h1{
+    font-size: 2rem;
+    color: var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+    margin-bottom: 1rem;
+}
+h5{
+    color: var(--color-black);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.frase-p{
+    color: var(--color-black);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.container{
+    color: var(--color-white);
+    margin-top: 4rem;
+    /* background: red; */
+    text-align: center;
+    position: relative;
+}
+.container-align{
+    padding: 37px;
+    max-width: 400px;
+    background: var(--color-white);
+    box-shadow: 5px 4px 10px 3px var(--color-black);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* LOJA */
+
+.div-bar-loja-button{
+    position: relative;
+    width: 64px;
+}
+.div-loja{
+    transition:all 0.3s ease-in-out;
+    overflow: hidden;
+    position: fixed;
+    background: var(--color-white);
+    text-align: center;
+    left: -110%;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    z-index: 9;
+    padding-top: 10px;
+    box-shadow: 5px 4px 10px 3px var(--color-black);
+}
+.div-loja h1{
+    border-bottom: 1px solid var(--color-black);
+    margin-bottom: 2rem;
+}
+.moedas-loja{
+    font-weight: 600;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.icon-loja-cash{
+    position: absolute;
+    top: 0.05rem;
+    font-size: 1.3rem;
+    color: forestgreen;
+}
+
+/* LOJA VENDA */
+.produto1{
+    color: var(--color-white);
+    position: relative;
+    line-height: 3rem;
+    cursor: pointer;
+    background: var(--color-black);
+    border-radius: 20px;
+}
+.em-breve{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.produto1-valor{
+    top: -2rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 900;
+    color: forestgreen;
+}
+.icon-loja-cash-produto1{
+    position: absolute;
+    top: 0.95rem;
+}
+
+
+/* BOTÃO LOJA */
+
+.div-label-hambuguer{
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    /* background: purple; */
+}
+.label-hamburguer{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 3rem;
+    height: 3rem;
+    background:var(--color-white);
+    border-radius: 5px;
+    border-top: 4px solid rgb(207, 207, 207);
+    border-left: 4px solid rgb(207, 207, 207);
+    transition:all 0.1s ease-in-out;
+}
+.label-hamburguer:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.div-content-hamburguer-loja p{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+#input-loja{
+    display: none;
+}
+
+#input-loja:checked ~ .div-loja{
+    left: 0;
+}
+.icon-button-cash{
+    font-size: 2.5rem;
+    color: forestgreen;
+}
+.icon-button-close{
+    font-size: 2.5rem;
+    color: red;
+}
+
+
+
+/* TENTATIVAS *//* RECORD *//* MOEDAS */
+
+.div-tentativas{
+    border-radius: 10px;
+    background: var(--color-black);
+}
+.div-tentativas p{
+    font-weight: 600;
+}
+.div-pontos{
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    background: var(--color-white);
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.p2{
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+.div-pontos .span-pontos, .div-moedas span{
+    position: relative;
+    top: -0.2rem;
+    font-weight: 600;
+}
+.div-moedas{
+    position: absolute;
+    top: 4.9rem;
+    left: 0.5rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    background: var(--color-white);
+    text-align: center;
+}
+.icon-record{
+    position: relative;
+    top: 0.20rem;
+    font-size: 1.7rem;
+    color: orange;
+}
+.icon-cash{
+    position: relative;
+    top: 0.20rem;
+    color: forestgreen;
+    font-size: 1.7rem;
+}
+
+/* CHUTE */
+
+.input-chute{
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 10px;
+    border: none;
+    padding: 2px 0px 2px 10px;
+    font-weight: 600;
+    
+}
+.input-chute:focus{
+    outline:2px solid dodgerblue;
+}
+.input-chute::-webkit-outer-spin-button,
+        .input-chute::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+.botão-chutar, .reiniciar{
+    border: none;
+    background: var(--color-white);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px 3px var(--color-black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.botão-chutar:active, .reiniciar:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 5px 3px var(--color-black);
+}
+
+/* RESULTADOS */
+.dica{
+    width: inherit;
+    background: var(--color-white);
+    color: var(--color-black);
+}
+.resultado{
+    margin-top: 0.7rem;
+    color: var(--color-black);
+    font-weight: 600;
+}
+.acertou{
+    font-weight: 900;
+    color: #00FF00;
+}
+.perdeu{
+    font-weight: 900;
+    color: #ff0000;
+}
+.span-secreto{
+    color: var(--color-white);
+    background: var(--color-black);
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+.copy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 900;
+}
+.return-numero{
+    display: none;
+}
+/* RESPONSIVE */
+
+@media all and (max-width: 850px){
+
+    /* PRINCIPAL */
+
+    .container{
+        transform: scale(0.9);
+    }
+
+    /* LOJA */
+    .moedas-loja{
+        font-size: 0.9rem;
+    }
+    .div-loja h1{
+        font-size: 1.7rem;
+    }
+}
+@media all and (max-width: 550px){
+    .container{
+        color: var(--color-white);
+        margin-top: 10rem;
+        text-align: center;
+        position: relative;
+    }
+}
+@media all and (max-width: 900px){
+    .div-loja{
+        transition:all 0.3s ease-in-out;
+        overflow: hidden;
+        position: fixed;
+        background: var(--color-white);
+        text-align: center;
+        left: -110%;
+        top: 0;
+        width: 100%;
+        height: 95vh;
+        z-index: 9;
+        padding-top: 10px;
+        box-shadow: 5px 4px 10px 3px var(--color-black);
+    }
+}
+@media all and (max-width: 400px){
+    .container{
+        transform: scale(0.8);
+    }
+}
